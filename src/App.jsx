@@ -19,6 +19,7 @@ function App() {
       >
         <label htmlFor="first_name">First name</label>
         <input
+          required
           type="text"
           id="first_name"
           value={name.firstName}
@@ -29,6 +30,7 @@ function App() {
         />
         <label htmlFor="last_name">Last name</label>
         <input
+          required
           type="text"
           id="last_name"
           value={name.lastName}
@@ -43,7 +45,7 @@ function App() {
       {showName && (
         <div>
           <p>
-            Full name: {name.firstName} {name.lastName}
+            Full Name: {name.firstName} {name.lastName}
           </p>
         </div>
       )}
